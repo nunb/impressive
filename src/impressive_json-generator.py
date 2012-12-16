@@ -1,22 +1,29 @@
 #!/usr/bin/env python
 
 from impressive import parseMarkup
-from json import dumps
+from json import dumps, loads
 import codecs
 
 try:
     while True:
         jsonObj = {}
         jsonObj["name"] = unicode(raw_input("Slide name: "), "utf-8")
-        jsonObj["class"] = unicode(raw_input("CSS classes: "), "utf-8")
-        jsonObj["page-number"] = int(raw_input("Page no.: "))
-        jsonObj["content"] = "cnt/%s.cnt" % (jsonObj["name"])
-        jsonObj["positions"] = {}
-        jsonObj["positions"]["data-x"] = int(raw_input("Data X: "))
-        jsonObj["positions"]["data-y"] = int(raw_input("Data Y: "))
-        jsonObj["positions"]["x-rotate"] = int(raw_input("Rotate X: "))
-        jsonObj["positions"]["y-rotate"] = int(raw_input("Rotate Y: "))
-        jsonObj["positions"]["scale"] = int(raw_input("Scale: "))
+        # TODO: Add check if already a config exists here
+        try:
+            fobj = open("json/%s.json" % (jsonObj["name"]))
+            jsonObj = loads(fobj.read().encode("utf8"))
+            print "Already a config file with this name.."
+
+        except IOError:
+            jsonObj["class"] = unicode(raw_input("CSS classes: "), "utf-8")
+            jsonObj["page-number"] = int(raw_input("Page no.: "))
+            jsonObj["content"] = "cnt/%s.cnt" % (jsonObj["name"])
+            jsonObj["positions"] = {}
+            jsonObj["positions"]["data-x"] = int(raw_input("Data X: "))
+            jsonObj["positions"]["data-y"] = int(raw_input("Data Y: "))
+            jsonObj["positions"]["x-rotate"] = int(raw_input("Rotate X: "))
+            jsonObj["positions"]["y-rotate"] = int(raw_input("Rotate Y: "))
+            jsonObj["positions"]["scale"] = int(raw_input("Scale: "))
 
         # Open files we need and dump content to cnt_str
         out_fobj = codecs.open("json/%s.json" % (jsonObj["name"]), "w", "utf-8")

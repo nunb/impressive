@@ -1,0 +1,6 @@
+After you answered the generator a few <b>questions</b><br>
+you'll have to run <span class="hl">./run.py json</span>.<br>
+<div style="font-size: 19px; line-height: 1.2em;">
+When you've already configured your presentation like I did<br>
+in <span class="hl">config/example.json</span> you are also able to
+run <span class="hl">./run.py json config/example.json</span></div>

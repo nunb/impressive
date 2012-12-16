@@ -8,6 +8,7 @@ from glob import glob
 from hashlib import sha256
 import codecs
 
+# TODO: Refactor with valid return
 def updateContent(jsonObj):
     cntFobj = codecs.open(jsonObj["content"], "r", encoding="utf-8")
     cntFobj_str = cntFobj.read().encode("utf8")

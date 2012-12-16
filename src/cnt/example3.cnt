@@ -1,0 +1,9 @@
+Example <b>III</b><br>
+Okay, let's create a presentation with the impressive console application<br>
+<ul class="listing-head">
+    <li><b>1)</b> Change directory of your terminal to <span class="hl">exec/</span></li>
+    <li><b>2)</b> Add a file to <span class="hl">exec/cnt/</span> like in <span class="hl">src/cnt/example.cnt</span></li>
+    <li><b>3)</b> start the impressive json generator by running:</li>
+    <li style="margin-left: 30px;"><b> ·</b> <span class="hl">./impressive_json-generator.py</span></li>
+</ul><br>
+<b>Okay..</b>

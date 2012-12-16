@@ -1,0 +1,1 @@
+{"name": "example2", "positions": {"data-y": 1000, "data-x": 0, "y-rotate": 90, "x-rotate": 20, "scale": 1}, "content-parsed": "Example II<br>\nThis is a normal slide<br>\n<b>You</b> can change the style in <a href=\"css/style.css\">this</a> file!\n", "page-number": 2, "content": "cnt/example2.cnt", "class": "step slide"}
