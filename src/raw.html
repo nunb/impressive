@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="%s">
+    <head>
+        <meta charset="%s" />
+        <meta name="view-port" content="width=%s" />
+        <title>%s</title>
+        <meta name="description" content="%s" />
+        <meta name="author" content="%s" />
+        <link href="%s" rel="stylesheet" />
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+        <link rel="shortcut icon" href="favicon.png" />
+    </head>
+
+    <body class="impress-not-supported">
+        <div class="fallback-message">
+            Your browser is too old!
+        </div>
+
+        <div id="impress">
+%s
+        </div>
+
+        <script>
+            if ("ontouchstart" in document.documentElement) {
+                document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+            }
+        </script>
+
+        <script src="js/impress.js"></script>
+        <script>
+            impress().init();
+        </script>
+    </body>
+</html>
