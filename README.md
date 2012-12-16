@@ -8,7 +8,7 @@ An impress.js presentation generator
 This is my impress presentation generator.  
 You have to solve a few steps until your presentation is generated.  
 First you'll have to create some content. Make sure to name it like  
-the step id in impress (example: cnt/start.cnt json/start.json <div id="start" ...>)  
+the step id in impress (example: cnt/start.cnt json/start.json ´´´HTML <div id="start" ...>´´´)  
   
 
 Tutorial short (long will follow)  
