@@ -2,12 +2,40 @@ impressive
 ==========
 
 An impress.js presentation generator
-
-
   
-This is my impress presentation generator.  
-You have to solve a few steps until your presentation is generated.  
-First you'll have to create some content. Make sure to name it like  
+I decided to code a small impress.js presentation generated, because I was tired  
+of doing this odd redundant HTML stuff. Please let me know your improvements by  
+opening an issue.  
+
+You have to solve a few steps until your presentation is ready.  
+First you'll have to create some content. Change into the cnt/ folder of exec/ by executing this command:   
+    '''BASH
+    cd exec/cnt/
+    '''
+Okay, after this you should create some content. For example you could create a start page, some content  
+pages and an end page.  
+    '''BASH
+    touch start.cnt content_a.cnt content_b.cnt end.cnt
+    '''
+Well, fill it with some content you want to display and you are finished with this step. Your content  
+will be parsed through a nl2br parser, so you can use this as your markdown :)  
+Remember to name your .cnt and .json files [the generators will do this automatically, but maybe you  
+want to change something in impressive.py itself] as your step id's. Here is an example:
+
+    '''
+        exec/
+            cnt/
+                content_a.cnt
+                content_b.cnt
+                end.cnt
+                start.cnt
+            json/
+                content_a.json
+                content_b.json
+                end.json
+                start.json
+    '''
+
 the step id in impress (example: cnt/start.cnt json/start.json &lt;div id="start" ...&gt;)  
   
   
