@@ -10,12 +10,12 @@ opening an issue.
 You have to solve a few steps until your presentation is ready.  
 First you'll have to create some content. Change into the cnt/ folder of exec/ by executing this command:   
     '''BASH
-    cd exec/cnt/
+        cd exec/cnt/
     '''
 Okay, after this you should create some content. For example you could create a start page, some content  
 pages and an end page.  
     '''BASH
-    touch start.cnt content_a.cnt content_b.cnt end.cnt
+        touch start.cnt content_a.cnt content_b.cnt end.cnt
     '''
 Well, fill it with some content you want to display and you are finished with this step. Your content  
 will be parsed through a nl2br parser, so you can use this as your markdown :)  
