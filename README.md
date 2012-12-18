@@ -35,10 +35,10 @@ want to change something in impressive.py itself] as your step id's. Here is an 
             start.json
         
         HTML:  
-        &lt;div id="start" ... &gt;  
-        &lt;div id="content_a" ... &gt;
-        &lt;div id="content_b" ... &gt;
-        &lt;div id="end" ... &gt;
+        <div id="start" ... >  
+        <div id="content_a" ... >
+        <div id="content_b" ... >
+        <div id="end" ... >
   
   
   
