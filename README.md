@@ -40,13 +40,22 @@ want to change something in impressive.py itself] as your step id's. Here is an 
         <div id="content_b" ... >
         <div id="end" ... >
   
-  
-  
-# Tutorial short (long will follow)  
-(Note: Do this all in your exec/ folder)  
-1. Create your content files in exec/cnt/  
-2. Create JSONs by using the impressive_json-generator.py  
-    -> Remember to add the content first to exec/cnt/!  
-3. execute run.py with json folder as argument (./run.py json)  
-    -> If executed in exec/  
+Okay, after you've added some content you are able to generate the json files which will be later  
+converted into the steps. Start the impressive JSON generator with this lines:
 
+    chmod u+x impressive_json-generator.py
+    ./impressive_json-generator.py  
+
+The generator asks you in a while-True-loop if you want to generate a new JSON slide,  
+just answer the questions and generate the JSONs. The generator also keeps track on content  
+updates (in cnt/$fileName.cnt) and patches them into the JSONs.  
+  
+As a last step you just have to run the run.py like this:
+    
+    chmod u+x run.py
+    ./run.py json
+
+The first argument is the folder where your JSONs are placed. They will be converted into  
+impress.js steps.  
+You are also able to run this script with a second argument, you can pass a config for the whole  
+presentation, so you won't be ask for every single detail every time you run this script.  
