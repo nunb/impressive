@@ -7,6 +7,8 @@ from json import dumps, loads
 from glob import glob
 from hashlib import sha256
 import codecs
+import markdown
+# NOTE: Download makrdown with easy_install markdown
 
 # TODO: Refactor with valid return
 def updateContent(jsonObj):
@@ -36,17 +38,8 @@ def idMaker(jsonDirectoryPath):
         ids.append(item.split(".")[0].split("/")[1])
     return ids
 
-
-"""
-This function will parse the impressiveMarkupLanguage iML into HTML code.
-Available tags are:
-    :-lst: List (optional css/class elements: :-lst:class'foo bar':)
-        :-bp: (bullet point)
-    :-img:/path/to/image: inserts an image
-    :: linebreak
-"""
 def parseMarkup(content):
-    return content.decode("utf8").replace("::", "<br>")
+    return markdown.markdown(unicode(content, "utf-8"), extensions=['extra', 'nl2br'])
 
 def containerGenerator(jsonDirectoryPath):
     '''This function scans the JSON directory, opens the JSON Files and generates the slide div-Tags'''
