@@ -69,7 +69,7 @@ impressive.py
 #generateHTML( ... )  
     generateHTML(divSlides_filled, language="de", charset="utf-8", viewport_width=1024, title="", description="No description", author="John Doe", stylesheet="css/style.css")  
   
-  
+ 
     Okay this functions put's everything together. You pass the div-tag list (divSlides_filled) and a few presentation  
     specific parameters like language, title, author, etc. I think you are able to read a function declaration.  
     The standard values for charset and viewport are not accessable via the generator or a config, you have to  
