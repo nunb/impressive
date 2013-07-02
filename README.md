@@ -1,6 +1,17 @@
 impressive
 ==========
 
+Announcement!
+=============
+
+Hey guys, I rewrote the codebase of impressive a few times, so that I was able to figure out  
+what user experience would be great for me... so I decided to write a "compiler". It'll be  
+online in a few days (btw. I rewrote it in Hy, a Lisp Python dialect, use searchbar, do it!!!).   
+The basic idea was using tools, I already use a lot. I write the most work related documentation  
+in ReST and compile it with sphinx - so I thought writing something similiar would be great for  
+impress.js :) My apprenticeship ends a few days with my final examinations - definetly more time  
+to code :>
+
 An impress.js presentation generator
   
 I decided to code a small impress.js presentation generated, because I was tired  
