@@ -1,6 +1,8 @@
 impressive
 ==========
 
+------------------------------
+
 Announcement!
 =============
 
@@ -11,6 +13,8 @@ The basic idea was using tools, I already use a lot. I write the most work relat
 in ReST and compile it with sphinx - so I thought writing something similiar would be great for  
 impress.js :) My apprenticeship ends a few days with my final examinations - definetly more time  
 to code :>
+
+------------------------------
 
 An impress.js presentation generator
   
